@@ -7,6 +7,7 @@ services:
       - "4040:4040"  # Spark UI
     volumes:
       - ./files/data:/home/jovyan/work/files/data
+      - ./flight-data:/home/jovyan/work/files/data/flight-data
       - ./files:/home/jovyan/work/files
     environment:
       - JUPYTER_ENABLE_LAB=yes
